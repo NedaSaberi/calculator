@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calc">
+        <input class="screen" id="screen" placeholder="0"/>
+        <div class="clearRow">
+            <input type="button" value="c" name="kc" onclick="clearScreen()"/>
+            <p>JavaScript Calculator</p>
+        </div>
+        <div class="keys">
+          <div class="row-1">
+            <input type="button" value="7" name="k7" onclick="addToCal(value)"/>
+            <input type="button" value="8" name="k8" onclick="addToCal(value)"/>
+            <input type="button" value="9" name="k9" onclick="addToCal(value)"/>
+            <input type="button" value="+" name="plus" onclick="addToCal(value)"/>
+            <input type="button" value="ABS" name="abs" style="font-size: 20px;" onclick="mathCalc('abs')"/>
+            <input type="button" value="ceil" name="ce" style="font-size: 20px;" onclick="mathCalc('ceil')"/>
+
+          </div>
+          <div class="row-2">
+            <input type="button" value="4" name="k4" onclick="addToCal(value)"/>
+            <input type="button" value="5" name="k5" onclick="addToCal(value)"/>
+            <input type="button" value="6" name="k6" onclick="addToCal(value)"/>
+            <input type="button" value="-" name="minus" onclick="addToCal(value)"/>
+            <input type="button" value="sqrt" name="sqrt" style="font-size: 20px;" onclick="mathCalc('sqrt')"/>
+            <input type="button" value="floor" name="fl" style="font-size: 20px;" onclick="mathCalc('floor')"/>
+          </div>
+          <div class="row-3">
+            <input type="button" value="1" name="k1" onclick="addToCal(value)"/>
+            <input type="button" value="2" name="k2" onclick="addToCal(value)"/>
+            <input type="button" value="3" name="k3" onclick="addToCal(value)"/>
+            <input type="button" value="*" name="multiple" onclick="addToCal(value)"/>
+            <input type="button" value="round" name="round" style="font-size: 20px;" onclick="mathCalc('round')"/>
+            <input type="button" value="^" name="pow" style="font-size: 20px;" onclick="mathCalc('^')"/>
+          </div>
+          <div class="row-4">
+            <input type="button" value="0" name="k0" onclick="addToCal(value)"/>
+            <input type="button" value="." name="kdot" onclick="addToCal(value)"/>
+            <input type="button" value="/" name="kslash" onclick="addToCal(value)"/>
+            <input type="button" value="=" name="equal" onclick="finalize()"/>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <script src="./main.js"></script>
+  </body>
+</html>
